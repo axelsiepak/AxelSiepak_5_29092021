@@ -1,44 +1,23 @@
+# AxelSiepak_5_29092021
 
-# P5-Kanap - Construisez un site e-commerce en JavaScript
+## Projet 5 - Construisez un site e-commerce en JavaScript "Kanap"
 
-<p align="center">
-  <img src="https://user.oc-static.com/upload/2021/09/29/16329291678171_image2.png">
-</p>
+### Pr√©requis
+Vous aurez besoin d'avoir Node et `npm` install√©s localement sur votre machine.
 
-## Backend
-Le dossier back permet de faire tourner l'api contenant les donnÈes des produits.
-### Installation
-Il suffit de se positionner dans le dossier backend avec un terminal et de saisir la commande ```npm install```
-### Lancement du serveur
-Il suffit de se positionner dans le dossier backend avec un terminal et de saisir la commande ```node start```
-Par dÈfaut le serveur sera lancÈ sur le port 3000 ( http://localhost:3000 )
-### Route api
-Il y a 3 routes disponibles sur le serveur : 
+### Installation serveur backend
 
-#### GET /api/products/
-Permet de rÈcupÈrer l'ensemble des produits disponibles
-#### GET /api/products/{id}
-{id} : identifiant unique d'un produit
-Permet de rÈcupÈrer un produit par son identifiant
-#### POST /api/products/order
-Envoie une commande pour l'enregistrer
-La commande envoyÈ doit Ítre au format JSON suivant : 
+Depuis le dossier "back" du projet, ex√©cutez "npm install". Vous pouvez ensuite
+ex√©cuter le serveur avec `node server`. Le serveur doit fonctionner sur `localhost`
+avec le port par d√©faut `3000` ( http://localhost:3000 ). Si le serveur s'ex√©cute
+sur un autre port pour une raison quelconque, celui-ci est affich√© sur la console
+au d√©marrage du serveur, par ex. `√âcoute sur le port 3001`
 
-    {
-	    contact{
-		    firstName: <string>,
-		    lastName: <string>,
-		    address: <string>,
-		    city; <string>,
-		    email: <string>
-		},
-		products: [<string>]
-	}
-	
-products Ètant un tableau d'id produit.
 
-## Frontend
-Le frontend prÈsente la partie utilisateur de l'application. Il doit Ítre lancÈ avec un serveur local (live server avec vscode par exemple), et nÈcessite que le backend soit lancÈ lui aussi pour fonctionner correctement.
+### Comp√©tences √©valu√©es
 
-### Config
-Le fichier de config permet de dÈfinir l'adresse de base du server, avec son host, port et si un certificat ssl est utilisÈ ou non.
+* G√©rer des √©v√©nements JavaScript
+* Valider des donn√©es issues de sources externes
+* Cr√©er un plan de test pour une application
+* Interagir avec un web service avec JavaScript
+* Respecter les [sp√©cifications fonctionnelles et techniques](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P5/DW+P5+-+Specifications+fonctionnelles.pdf "voir les sp√©cifications")
